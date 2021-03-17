@@ -1,0 +1,186 @@
+// NAVBAR
+header {
+  height: 75vh;
+  background-image: url(../../images/bg-pattern-intro.svg);
+  background-position: 22%;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: linear-gradient(to right, $very-light-red, $light-red);
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+}
+
+nav {
+  display: flex;
+  color: #fff;
+  padding: 3.75rem 10rem 0rem 10rem;
+}
+
+.left-nav {
+  margin-right: auto;
+  display: flex;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 4rem;
+}
+
+.nav-item {
+  color: #fff;
+  cursor: pointer;
+  font-weight: $overpass-regular;
+  position: relative;
+
+  margin-right: 2rem;
+  margin-top: 0.7rem;
+  height: 100%;
+
+  &:hover {
+    font-weight: $overpass-bold;
+    text-decoration: underline;
+  }
+
+  &:hover img {
+    transform: rotate(180deg);
+    transition: transform 0.2s;
+  }
+
+  &:hover .nav-item--container {
+    display: block;
+  }
+}
+
+.nav-item--container {
+  display: none;
+  background: #fff;
+  position: absolute;
+  border-radius: 0.3125rem;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+
+  padding: 1.5rem;
+  margin-top: 2.5rem;
+
+  & ul:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+}
+
+.nav-subitem {
+  text-decoration: none;
+  color: $headings;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: $ubuntu-regular;
+
+  &:hover {
+    font-weight: $ubuntu-bold;
+  }
+}
+
+.login {
+  margin-right: 2rem;
+  color: #fff;
+}
+
+.sign-up {
+  color: $CTA;
+  padding: 1rem 2.5rem;
+  background: #fff;
+  border-radius: 1.75rem;
+
+  &:hover {
+    background: $CTA-hover;
+    color: #fff;
+    font-weight: $overpass-bold;
+  }
+}
+
+.menu-arrow {
+  margin-left: 0.1rem;
+  transition: transform 0.2s;
+}
+
+.login:hover {
+  font-weight: $overpass-bold;
+  text-decoration: underline;
+}
+
+// HEADER TEXT
+.header {
+  width: 100%;
+  height: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: #fff;
+
+  &__title {
+    font-size: 4rem;
+    font-weight: $overpass-bold;
+
+    margin-bottom: 0.5rem;
+  }
+
+  &__sub {
+    font-size: 1.25rem;
+    font-weight: $overpass-regular;
+
+    margin-bottom: 3rem;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 18.125rem;
+  }
+}
+
+.btn {
+  width: 8.5625rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.75rem;
+  cursor: pointer;
+
+  &--light {
+    background: #fff;
+    color: $CTA;
+    font-weight: $overpass-bold;
+
+    &:hover {
+      background: $CTA-hover;
+      color: #fff;
+    }
+  }
+
+  &--dark {
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: $overpass-bold;
+
+    &:hover {
+      background: #fff;
+      border: none;
+      color: $CTA;
+    }
+  }
+}

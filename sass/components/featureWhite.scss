@@ -1,0 +1,46 @@
+// FIRST SECTION
+.feature__white--1 {
+  height: 63.125rem;
+  position: relative;
+  // position: relative;
+
+  & h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 9.375rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.feature__container--white-1 {
+  display: flex;
+  align-items: center;
+  padding-left: 10rem;
+  height: 100%;
+}
+
+.feature__text--editor {
+  margin-right: 6rem;
+}
+
+.feature__image--editor {
+  margin-right: -16rem;
+}
+
+// SECOND SECTION
+.feature__white--2 {
+  height: 64.0625rem;
+}
+
+.feature__container--white-2 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 10rem;
+}
+
+.feature__image--laptop {
+  margin-left: -17rem;
+}

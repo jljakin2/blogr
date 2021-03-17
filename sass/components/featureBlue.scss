@@ -1,0 +1,41 @@
+.feature__blue {
+  background-image: linear-gradient(
+    to right,
+    $very-dark-gray-blue,
+    $very-dark-desat-blue
+  );
+  border-radius: 0 6rem 0 6rem;
+  overflow: hidden;
+
+  height: 23rem;
+  padding: 0 10rem;
+  display: flex;
+  position: relative;
+  z-index: -10;
+}
+
+.feature__blue::before {
+  content: "";
+  background-image: url(../../images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+
+  width: 65rem;
+  height: 65rem;
+  position: absolute;
+  top: -34rem;
+  left: -10rem;
+  z-index: -1;
+}
+
+.text__container--blue {
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.smartphones {
+  width: 29.5rem;
+  height: 31.1875rem;
+  margin-top: -3rem;
+}

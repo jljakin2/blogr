@@ -1,0 +1,45 @@
+footer {
+  height: 22.5rem;
+  background: $footer-background;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 0 6rem 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.375rem 10rem 4.375rem 10rem;
+}
+
+.footer__container {
+  // background: grey;
+  width: 62.5rem;
+  max-width: 62.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  // align-content: flex-start;
+}
+
+.footer__logo {
+  width: 6.25rem;
+  height: 2.5rem;
+}
+
+.footer__link--header {
+  font-weight: $ubuntu-bold;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.footer__link--item a {
+  font-weight: $ubuntu-regular;
+  color: $footer-text;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__link--item:not(:last-child) {
+  margin-bottom: 1rem;
+}

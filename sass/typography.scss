@@ -1,0 +1,35 @@
+.header--dark {
+  font-size: 2.5rem;
+  color: $headings;
+  font-weight: $overpass-bold;
+}
+
+.header--light {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: $overpass-bold;
+  margin-bottom: 1rem;
+}
+
+.subheader {
+  font-size: 1.75rem;
+  color: $headings;
+
+  margin-bottom: 1rem;
+}
+
+.subheader__text {
+  font-size: 1rem;
+  color: $body-copy;
+  font-weight: $overpass-regular;
+}
+
+.subheader__text--light {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: $overpass-regular;
+}
+
+.subheader__text:not(:last-child) {
+  margin-bottom: 4rem;
+}
