@@ -8,6 +8,10 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 4.375rem 10rem 4.375rem 10rem;
+
+  @include respond(tab-port) {
+    height: 100%;
+  }
 }
 
 .footer__container {
@@ -18,17 +22,34 @@ footer {
   display: flex;
   justify-content: space-between;
   // align-content: flex-start;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .footer__logo {
   width: 6.25rem;
   height: 2.5rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 4.5rem;
+  }
 }
 
 .footer__link--header {
   font-weight: $ubuntu-bold;
   margin-bottom: 2rem;
   color: #fff;
+}
+
+.footer__link--list {
+  @include respond(tab-port) {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .footer__link--item a {

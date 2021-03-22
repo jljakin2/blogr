@@ -68,7 +68,48 @@
       <ul class="right-nav">
         <li><a href="#" class="login">Login</a></li>
         <li><a href="#" class="sign-up">Sign Up</a></li>
+        <li><img src="./images/icon-hamburger.svg" alt="hamburger" class="hamburger"></li>
+        <li><img src="./images/icon-close.svg" alt="close" class="close"></li>
       </ul>
+      <div class="mobile-menu__container">
+        <ul class="mobile-menu">
+          <li class=" mobile-menu__head-item">Product
+            <img src="./images/icon-arrow-dark.svg" alt="arrow" class="menu-arrow">
+          </li>
+          <ul class="mobile-menu__sub-container">
+            <li><a href="#" class="mobile-menu__sub-item">Overview</a></li>
+            <li><a href="#" class="mobile-menu__sub-item">Pricing</a></li>
+            <li><a href="#" class="mobile-menu__sub-item">Marketplace</a></li>
+            <li><a href="#" class="mobile-menu__sub-item">Features</a></li>
+            <li><a href="#" class="mobile-menu__sub-item">Integrations</a></li>
+          </ul>
+
+          <li class="mobile-menu__head-item">Company
+            <img src="./images/icon-arrow-dark.svg" alt="arrow" class="menu-arrow">
+          </li>
+          <ul class="mobile-menu__sub-container">
+            <li><a href="#" class="mobile-menu__sub-item">About</a></li>
+            <li><a href="#" class="mobile-menu__sub-item">Team</a></li>
+            <li><a href="#" class="mobile-menu__sub-item">Blog</a></li>
+            <li><a href="#" class="mobile-menu__sub-item">Careers</a></li>
+          </ul>
+
+          <li class="mobile-menu__head-item">Connect
+            <img src="./images/icon-arrow-dark.svg" alt="arrow" class="menu-arrow">
+          </li>
+          <ul class="mobile-menu__sub-container">
+            <li><a href="#" class="mobile-menu__sub-item">Contact</a></li>
+            <li><a href="#" class="mobile-menu__sub-item">Newsletter</a></li>
+            <li><a href="#" class="mobile-menu__sub-item">LinkedIn</a></li>
+          </ul>
+
+        </ul>
+        <div class="login--mobile"><a href="#">Login</a></div>
+        <div class="sign-up__container">
+          <div class="sign-up--mobile"><a href="#">Sign Up</a></div>
+        </div>
+
+      </div>
     </nav>
 
     <div class="header">
@@ -101,7 +142,10 @@
         </p>
       </div>
       <div class="feature__image--editor">
-        <img src="./images/illustration-editor-desktop.svg" alt="editor graphic">
+        <picture>
+          <source srcset="./images/illustration-editor-mobile.svg" media="(max-width: 62.5em)">
+          <img src="./images/illustration-editor-desktop.svg" alt="editor graphic">
+        </picture>
       </div>
     </div>
   </section>
@@ -117,7 +161,10 @@
   <section class="feature__white--2">
     <div class="feature__container--white-2">
       <div class="feature__image--laptop">
-        <img src="./images/illustration-laptop-desktop.svg" alt="laptop graphic">
+        <picture>
+          <source srcset="./images/illustration-laptop-mobile.svg" media="(max-width: 62.5em)">
+          <img src="./images/illustration-laptop-desktop.svg" alt="laptop graphic">
+        </picture>
       </div>
       <div class="feature__text--laptop">
         <h3 class="subheader">Free, open, simple</h3>

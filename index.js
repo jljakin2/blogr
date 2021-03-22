@@ -1,17 +1,22 @@
-// const navItems = document.querySelectorAll(".nav-item");
+const mobileNavItems = document.querySelectorAll(".mobile-menu__head-item");
+const hamburger = document.querySelector(".hamburger");
+const closeButton = document.querySelector(".close");
+const menu = document.querySelector(".mobile-menu__container");
 
-// navItems.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     const subItem = item.firstElementChild.nextElementSibling;
+mobileNavItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.nextElementSibling.classList.toggle("visible");
+  });
+});
 
-//     subItem.classList.add("visible");
-//   });
-// });
+hamburger.addEventListener("click", () => {
+  menu.classList.add("visible");
+  hamburger.classList.add("invisible");
+  closeButton.classList.add("visible");
+});
 
-// navItems.forEach((item) => {
-//   item.addEventListener("mouseleave", () => {
-//     const subItem = item.firstElementChild.nextElementSibling;
-
-//     subItem.classList.remove("visible");
-//   });
-// });
+closeButton.addEventListener("click", () => {
+  menu.classList.remove("visible");
+  closeButton.classList.remove("visible");
+  hamburger.classList.remove("invisible");
+});

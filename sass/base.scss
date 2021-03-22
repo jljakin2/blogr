@@ -9,6 +9,14 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+
+  @include respond(small-laptop) {
+    font-size: 95%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 90%;
+  }
 }
 
 body {

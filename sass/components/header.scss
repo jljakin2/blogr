@@ -16,12 +16,21 @@ header {
     left: 0;
     z-index: -10;
   }
+
+  @include respond(tab-port) {
+    height: 37.5rem;
+  }
 }
 
 nav {
   display: flex;
   color: #fff;
   padding: 3.75rem 10rem 0rem 10rem;
+
+  @include respond(tab-port) {
+    justify-content: space-between;
+    padding: 3rem 2rem 0 2rem;
+  }
 }
 
 .left-nav {
@@ -61,6 +70,10 @@ nav {
   &:hover .nav-item--container {
     display: block;
   }
+
+  @include respond(tab-port) {
+    display: none;
+  }
 }
 
 .nav-item--container {
@@ -94,6 +107,15 @@ nav {
 .login {
   margin-right: 2rem;
   color: #fff;
+
+  &:hover {
+    font-weight: $overpass-bold;
+    text-decoration: underline;
+  }
+
+  @include respond(tab-port) {
+    display: none;
+  }
 }
 
 .sign-up {
@@ -107,16 +129,15 @@ nav {
     color: #fff;
     font-weight: $overpass-bold;
   }
+
+  @include respond(tab-port) {
+    display: none;
+  }
 }
 
 .menu-arrow {
   margin-left: 0.1rem;
   transition: transform 0.2s;
-}
-
-.login:hover {
-  font-weight: $overpass-bold;
-  text-decoration: underline;
 }
 
 // HEADER TEXT
@@ -136,6 +157,11 @@ nav {
     font-weight: $overpass-bold;
 
     margin-bottom: 0.5rem;
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+      text-align: center;
+    }
   }
 
   &__sub {
@@ -143,6 +169,10 @@ nav {
     font-weight: $overpass-regular;
 
     margin-bottom: 3rem;
+
+    @include respond(tab-port) {
+      font-size: 1rem;
+    }
   }
 
   &__button-container {
@@ -183,4 +213,20 @@ nav {
       color: $CTA;
     }
   }
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+}
+
+.close {
+  cursor: pointer;
+  display: none;
+
+  margin-left: 1rem;
 }

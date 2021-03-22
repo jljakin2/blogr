@@ -1,5 +1,5 @@
 .feature__blue {
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right,
     $very-dark-gray-blue,
     $very-dark-desat-blue
@@ -12,6 +12,15 @@
   display: flex;
   position: relative;
   z-index: -10;
+
+  @include respond(tab-port) {
+    overflow: visible;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+  }
 }
 
 .feature__blue::before {
@@ -25,6 +34,10 @@
   top: -34rem;
   left: -10rem;
   z-index: -1;
+
+  @include respond(tab-port) {
+    display: none;
+  }
 }
 
 .text__container--blue {
@@ -32,10 +45,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include respond(tab-port) {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 6.8125rem;
+    align-items: center;
+  }
 }
 
 .smartphones {
   width: 29.5rem;
   height: 31.1875rem;
   margin-top: -3rem;
+
+  @include respond(tab-port) {
+    width: 20.5rem;
+    height: 21.6875rem;
+    margin-top: -9rem;
+  }
+}
+
+.subheader__text--light {
+  @include respond(tab-port) {
+    line-height: 2;
+    width: 85%;
+  }
 }
